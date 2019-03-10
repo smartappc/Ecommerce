@@ -7,32 +7,27 @@
 @section('content')
     <div class="box">
         <div class="box-header with-border">
-            <h3 class="box-title">Users</h3>
+            <h3 class="box-title">Categories</h3>
             <!-- /.box-tools -->
         </div>
 
         <!-- /.box-header -->
         <div class="box-body">
-           <form method="post" action="{{route('categories.store')}}">
+           <form method="post" action="{{route('categories.store')}}" enctype="multipart/form-data">
                {{ csrf_field() }}
                <div class="form-group">
-                   <label for="name" class="control-label col-md-2">User Name</label>
+                   <label for="name" class="control-label col-md-2">Category Name</label>
                    <div class="col-md-10">
                        <input class="form-control" type="text" name="name" value="{{old('name')}}">
                    </div>
                </div>
 
-               <div class="form-group">
-                   <label for="password" class="control-label col-md-2">Password</label>
-                   <div class="col-md-10">
-                       <input class="form-control" type="password" name="password" value="{{old('password')}}">
-                   </div>
-               </div>
+
 
                <div class="form-group">
-                   <label for="email" class="control-label col-md-2">Email</label>
+                   <label for="image" class="control-label col-md-2">Image</label>
                    <div class="col-md-10">
-                       <input class="form-control" type="email" name="email" value="{{old('email')}}">
+                       <input class="form-control" type="file" name="image" value="{{old('image')}}">
                    </div>
                </div>
 

@@ -22,4 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 //admin routes
 Route::group(['prefix' => 'admin'], function () {
     Route::resource('users' , 'AdminUsersController');
+    Route::resource('categories' , 'AdminCategoriesController');
 });

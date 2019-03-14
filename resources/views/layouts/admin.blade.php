@@ -245,6 +245,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">HEADER</li>
                 <!-- Optionally, you can add icons to the links -->
+                <li class="active"><a href="{{url('admin/chart')}}"><i class="fa fa-link"></i> <span>Statistics</span></a></li>
                 <li class="active"><a href="{{url('admin/users')}}"><i class="fa fa-link"></i> <span>Users</span></a></li>
                 <li class="active"><a href="{{url('admin/categories')}}"><i class="fa fa-link"></i> <span>Categoires</span></a></li>
                 <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>

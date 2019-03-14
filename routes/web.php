@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/admin/chart', 'CounterController@chart');
 
 Auth::routes();
 
